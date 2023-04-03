@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>일산 퀸즈타이</title>
+
+	<!-- 파비콘 -->
+	<link rel="shortcut icon" href="/img/favicon.ico">
+
+	<!-- css리셋 -->
+	<link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+
+	<!-- 제이쿼리 -->
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- 부트스트랩 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+	<!-- 카카오api -->
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=57d582beca1c2a472e09880959894f89"></script>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=57d582beca1c2a472e09880959894f89&libraries=LIBRARY"></script>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=57d582beca1c2a472e09880959894f89&libraries=services,clusterer,drawing"></script>
+
+	<!-- 기본css -->
+	<link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+	<section class="header">
+		일산 퀸즈타이
+	</section>
+
+	<section class="content">
+
+		<!-- 슬라이드 -->
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active"><img class="d-block w-100" src="/img/1.jpg"/><span>카운터</span></div>
+				<div class="carousel-item"><img class="d-block w-100" src="/img/2.jpg"/><span>카운터</span></div>
+				<div class="carousel-item"><img class="d-block w-100" src="/img/3.jpg"/><span>로비</span></div>
+				<div class="carousel-item"><img class="d-block w-100" src="/img/4.jpg"/><span>복도</span></div>
+				<div class="carousel-item"><img class="d-block w-100" src="/img/5.jpg"/><span>복도</span></div>
+				<div class="carousel-item"><img class="d-block w-100" src="/img/6.jpg"/><span>룸 1인실</span></div>
+				<div class="carousel-item"><img class="d-block w-100" src="/img/7.jpg"/><span>룸 1인실</span></div>
+				<div class="carousel-item"><img class="d-block w-100" src="/img/8.jpg"/><span>룸 2인실</span></div>
+				<div class="carousel-item"><img class="d-block w-100" src="/img/9.jpg"/><span>파우더룸</span></div>
+				<div class="carousel-item"><img class="d-block w-100" src="/img/10.jpg"/><span>샤워실</span></div>
+				<div class="carousel-item"><img class="d-block w-100" src="/img/11.jpg"/><span>수건</span></div>
+				<div class="carousel-item"><img class="d-block w-100" src="/img/12.jpg"/><span>업소로고</span></div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"> 
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+				<span class="visually-hidden">Previous</span> 
+			</button> 
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> 
+				<span class="carousel-control-next-icon" aria-hidden="true"></span> 
+				<span class="visually-hidden">Next</span> 
+			</button>
+		</div>
+		  
+		<!-- 기본정보 -->
+		<ul class="basic-info">
+			<li>
+				<p>상호명</p>
+				<p>퀸즈타이</p>
+			</li>
+			<li>
+				<p>주소</p>
+				<p>
+				경기도 고양시 일산서구 강성로 121/</br> 
+				주엽동 66 일산삼희프라자 6층
+				</p>
+			</li>
+			<li>
+				<p>도보시간</p>
+				<p>주엽역 7번 출구 도보 2분</p>
+			</li>
+			<li>
+				<p>영업시간</p>
+				<p>오전 11시 30분 ~ 다음날 새벽 3시 영업</p>
+			</li>
+			<li>
+				<p>전화번호</p>
+				<p>031-914-3388</p>
+			</li>
+		</ul>
+
+		<!-- 가격 -->
+		<div class="price origin" id="origin-person">
+			<div class="con">
+				<p class="title">이벤트 및 공지</p>
+				<ul>
+					<li>
+						<p class="hour">*사전예약시 적용되는 회원가 입니다.</p>
+					</li>
+					<li>
+						<p class="hour">*초건전 마사지 샵입니다.</p>
+					</li>
+					<li>
+						<p class="hour">*아래 가격은 오픈 이벤트 할인가 입니다.</p>
+					</li>
+				</ul>
+			</div>
+			<div class="con">
+				<p class="title">타이 관리</p>
+				<ul>
+					<li>
+						<p class="hour">60분</p>
+						<div>
+							<div class="discount-price">
+								<p>35,000원</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="hour">90분</p>
+						<div>
+							<div class="discount-price">
+								<p>50,000원</p>
+							</div>
+						</div>
+					</li>
+				
+				</ul>
+			</div>
+			<div class="con">
+				<p class="title">아로마 관리</p>
+				<ul>
+					<li>
+						<p class="hour">60분</p>
+						<div>
+							<div class="discount-price">
+								<p>40,000원</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="hour">90분</p>
+						<div>
+							<div class="discount-price">
+								<p>55,000원</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- 지도 -->
+		<div id="map" class="map"></div>
+		<div class="move_map">
+			<div>
+				<a href="https://map.kakao.com/link/map/퀸즈타이,126.7621686,37.6705815">지도보기</a>
+				<a href="https://map.kakao.com/link/to/퀸즈타이,126.7621686,37.6705815">길찾기</a>
+			</div>
+			<a class="tel" href="tel:0319143388">전화하기</a>
+		</div>
+
+	</section>
+	<script>
+		//지도 설정
+		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+			mapOption = { 
+				center: new kakao.maps.LatLng(126.7621686, 37.6705815), // 지도의 중심좌표
+				level: 3 // 지도의 확대 레벨
+			};
+
+		var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+		// 마커가 표시될 위치입니다 
+		var markerPosition  = new kakao.maps.LatLng(126.7621686, 37.6705815); 
+
+		// 마커를 생성합니다
+		var marker = new kakao.maps.Marker({
+			position: markerPosition
+		});
+
+		// 마커가 지도 위에 표시되도록 설정합니다
+		marker.setMap(map);
+	</script>
+</body>
+</html>
