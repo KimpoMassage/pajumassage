@@ -72,6 +72,10 @@ section.content {
   font-weight: bold;
 }
 
+.slide img{
+  height: 30vh;
+}
+
 .basic-info {
   display: flex;
   flex-direction: column;
@@ -159,6 +163,7 @@ section.content {
   flex-direction: row;
   align-items: center;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .price .con ul li div .discount-price span {
@@ -234,4 +239,17 @@ section.content {
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
+}
+
+.hire{
+  display: none;
+}
+
+.hire li{
+  align-items: flex-start;
+}
+
+.hire img{
+  width: 50%;
+  height: auto;
 }
